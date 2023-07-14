@@ -29,6 +29,7 @@
 body {
     /*background color image repeat position/size*/
     background: var(--bg-url) no-repeat top center/cover ;
+    height: 100vh;
 
 }
 /* o asterisco serve pra selencionar o body inteiro*/
@@ -179,4 +180,15 @@ ul li a:hover {
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
+}
+
+/* media queries*/
+@media (min-widthÇ 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
 }
